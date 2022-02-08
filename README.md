@@ -1,6 +1,6 @@
 # Critical Data & Visualization 🦕
 
-Hi! I am [your name] and in this repository I will develop my work for the [Critical Data & Visualization](https://cdv.leoneckert.com/) class.  
+Hi! I am Sophie and in this repository I will develop my work for the [Critical Data & Visualization](https://cdv.leoneckert.com/) class.  
 
 ### My work
 
