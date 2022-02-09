@@ -1,4 +1,4 @@
-## Exercise (placeholder)
+## CDV Coding Foundation 🧸
 
 In this exercise I reviewed the basic html, css and javaScript. I have some problems with overriding the browser's default button style and are still trying to find a solution;)
 
