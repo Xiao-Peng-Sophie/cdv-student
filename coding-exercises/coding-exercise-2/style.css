@@ -1,0 +1,62 @@
+h1{
+    font-family: monospace;
+    text-align: left;
+    font-weight: normal;
+    max-width: 860px;
+
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.introText{
+    font-family: monospace;
+    text-align: left;
+    max-width: 860px;
+    line-height: 150%;
+    
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+@keyframes rotate{
+    100% {transform: rotate(360deg);}
+}
+
+#flex-container {
+    display:flex;
+    flex-flow: row wrap;
+    
+    justify-content: space-evenly;
+}
+.flex-item{
+    margin: 10px;
+    padding-top:10px;
+    padding-left: 0px;
+    width:210px;
+    height:200px;
+   
+
+}
+
+.rotateBox{
+
+    margin: auto;
+    margin-top: 50px;
+    width: 130px;
+    height: 30px;
+    border-radius: 50%;
+    animation: rotate 3s infinite linear;
+
+
+}
+
+.title{
+   
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 130%;
+}
+

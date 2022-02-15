@@ -5,8 +5,9 @@ var clickButton=document.getElementById("clickButton");
 var textBox=document.getElementById("textBox");
 
 var boxContainer=document.getElementById("boxContainer");
-var sizeSlider=document.getElementById("sizeSlider");
-var emojiSlider=document.getElementById("emojiSlider");
+var sizeSlider = document.getElementById("sizeSlider");
+let emojiSlider=document.getElementById("emojiSlider");
+
 
 var emoji=document.getElementById("emoji");
 var emojis=["🦭","🦄","🐟","🐽","🧜","🦆","🐢","🦞","🦕","🦐","🦙","🦜","🦥"];
