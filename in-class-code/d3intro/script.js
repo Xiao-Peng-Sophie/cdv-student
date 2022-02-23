@@ -2,10 +2,10 @@ var viz= d3.select("#viz-container")
     .append("svg")
         .attr("id","viz")
         .attr("width",800)
-        .attr("height",800)
+        .attr("height",window.innerHeight-20)
 ;
 
-viz.attr("height",600);
+// viz.attr("height",600);
 
 // var myCircle= viz.append("circle")
 //     .attr("cx",100)

@@ -1,0 +1,232 @@
+[
+    {
+        "timestamp": "2022-02-22T12:15:47.351Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "12:30",
+        "howLongDidYouWait": "15 minutes",
+        "where": "Restaurant",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Normal",
+        "scenarios": "Have lunch with friends at Fuchuan, talking with friends on Winter Oplympic when waiting"
+    },
+    {
+        "timestamp": "2022-02-22T12:22:10.471Z",
+        "whatAreYouWaitingFor": "Traffic Light",
+        "whatsTheTime": "16:30",
+        "howLongDidYouWait": "2 minutes",
+        "where": "Road",
+        "whatWereYouDoing": "Just waiting",
+        "feelings": "Impatient"
+    },
+    {
+        "timestamp": "2022-02-22T12:23:27.418Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "16:40",
+        "howLongDidYouWait": "60 minutes",
+        "where": "Restaurant",
+        "whatWereYouDoing": "Chatting with friends, Looking at phone",
+        "feelings": "Happy and Excited",
+        "scenarios": "Eat out with friends and there are just so many people"
+    },
+    {
+        "timestamp": "2022-02-22T12:24:01.174Z",
+        "whatAreYouWaitingFor": "Subway",
+        "whatsTheTime": "20:38",
+        "howLongDidYouWait": "3 minutes",
+        "where": "Subway station",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:26:09.725Z",
+        "whatAreYouWaitingFor": "Workout Over",
+        "whatsTheTime": "15:30",
+        "howLongDidYouWait": "15 minutes",
+        "where": "Gym treadmill",
+        "whatWereYouDoing": "Just waiting",
+        "feelings": "Impatient",
+        "scenarios": "So tired that I didn't want to do anything; just hope it's over"
+    },
+    {
+        "timestamp": "2022-02-22T12:28:04.854Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "17:24",
+        "howLongDidYouWait": "10 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Normal",
+        "scenarios": "besides talking to my friends, I also stared at the screen to watch the location of my waimai"
+    },
+    {
+        "timestamp": "2022-02-22T12:28:47.186Z",
+        "whatAreYouWaitingFor": "Shuttle bus",
+        "whatsTheTime": "19:40",
+        "howLongDidYouWait": "5 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:30:34.789Z",
+        "whatAreYouWaitingFor": "Spoiling the water to make tea",
+        "whatsTheTime": "21:07",
+        "howLongDidYouWait": "6 minutes",
+        "where": "Dorm",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Happy and Excited"
+    },
+    {
+        "timestamp": "2022-02-22T12:32:33.754Z",
+        "whatAreYouWaitingFor": "Traffic Light",
+        "whatsTheTime": "9:45",
+        "howLongDidYouWait": "2 minutes",
+        "where": "Road",
+        "whatWereYouDoing": "Just waiting",
+        "feelings": "Impatient",
+        "scenarios": "so cold :( "
+    },
+    {
+        "timestamp": "2022-02-22T12:33:30.150Z",
+        "whatAreYouWaitingFor": "Subway",
+        "whatsTheTime": "9:50",
+        "howLongDidYouWait": "4 minutes",
+        "where": "Subway station",
+        "whatWereYouDoing": "Just waiting",
+        "feelings": "Happy and Excited",
+        "scenarios": "On the way to watch exhibitions with friends"
+    },
+    {
+        "timestamp": "2022-02-22T12:34:17.996Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "12:00",
+        "howLongDidYouWait": "15 minutes",
+        "where": "Restaurant",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:35:18.761Z",
+        "whatAreYouWaitingFor": "Friends",
+        "whatsTheTime": "14:30",
+        "howLongDidYouWait": "20 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Happy and Excited",
+        "scenarios": "waiting for my friend to submit her homework and go to the park"
+    },
+    {
+        "timestamp": "2022-02-22T12:38:53.465Z",
+        "whatAreYouWaitingFor": "sunset",
+        "whatsTheTime": "16:55",
+        "howLongDidYouWait": "30 minutes",
+        "where": "Park",
+        "whatWereYouDoing": "Riding bicycles with friends",
+        "feelings": "Happy and Excited",
+        "scenarios": "We decided to wait for some time and leave after the sunset"
+    },
+    {
+        "timestamp": "2022-02-22T12:39:58.151Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "18:27",
+        "howLongDidYouWait": "30minutes",
+        "where": "Restaurant",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:41:52.956Z",
+        "whatAreYouWaitingFor": "Friends",
+        "whatsTheTime": "19:50",
+        "howLongDidYouWait": "13minutes",
+        "where": "School",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Happy and Excited",
+        "scenarios": "Meet a friend who was eating when I come back to school so I waited for her and talked with her at meantime"
+    },
+    {
+        "timestamp": "2022-02-22T12:45:13.702Z",
+        "whatAreYouWaitingFor": "Alarm clock",
+        "whatsTheTime": "6:40",
+        "howLongDidYouWait": "55 minutes",
+        "where": "Dorm",
+        "whatWereYouDoing": "Just waiting, Sleeping",
+        "feelings": "Normal",
+        "scenarios": "weirdly wake up early but decided not to get up "
+    },
+    {
+        "timestamp": "2022-02-22T12:47:36.071Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "12:03",
+        "howLongDidYouWait": "5 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:48:13.288Z",
+        "whatAreYouWaitingFor": "Workout Over",
+        "whatsTheTime": "14:37",
+        "howLongDidYouWait": "10 minutes",
+        "where": "Gym treadmill",
+        "whatWereYouDoing": "Doing workout",
+        "feelings": "Impatient"
+    },
+    {
+        "timestamp": "2022-02-22T12:49:36.042Z",
+        "whatAreYouWaitingFor": "Traffic Light",
+        "whatsTheTime": "15:10",
+        "howLongDidYouWait": "1 minute",
+        "where": "Road",
+        "whatWereYouDoing": "Just waiting",
+        "feelings": "Normal"
+    },
+    {
+        "timestamp": "2022-02-22T12:51:54.284Z",
+        "whatAreYouWaitingFor": "Friends",
+        "whatsTheTime": "17:55",
+        "howLongDidYouWait": "5 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Normal",
+        "scenarios": "wait for a friend to have dinner"
+    },
+    {
+        "timestamp": "2022-02-22T12:52:53.021Z",
+        "whatAreYouWaitingFor": "Messages",
+        "whatsTheTime": "22:23",
+        "howLongDidYouWait": "5 minutes",
+        "where": "Dorm",
+        "whatWereYouDoing": "Looking at phone",
+        "feelings": "Happy and Excited",
+        "scenarios": "Wait for my friend to send his guitar video"
+    },
+    {
+        "timestamp": "2022-02-22T12:54:25.810Z",
+        "whatAreYouWaitingFor": "Class begins",
+        "whatsTheTime": "20:49",
+        "howLongDidYouWait": "11minutes",
+        "where": "IMA Studio",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Happy and Excited",
+        "scenarios": "Came to studio a bit earlier to see friends"
+    },
+    {
+        "timestamp": "2022-02-22T12:56:52.199Z",
+        "whatAreYouWaitingFor": "Food",
+        "whatsTheTime": "11:15",
+        "howLongDidYouWait": "5 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Chatting with friends",
+        "feelings": "Happy and Excited",
+        "scenarios": "Talking with a friend about traveling while waiting for food"
+    },
+    {
+        "timestamp": "2022-02-22T12:58:16.695Z",
+        "whatAreYouWaitingFor": "A friend's face in a video",
+        "whatsTheTime": "11:37",
+        "howLongDidYouWait": "2 minutes",
+        "where": "School",
+        "whatWereYouDoing": "Recording the video with my phone",
+        "feelings": "Happy and Excited"
+    }
+]
