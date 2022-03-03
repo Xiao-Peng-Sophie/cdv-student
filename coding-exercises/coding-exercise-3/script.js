@@ -96,16 +96,13 @@ function gotData(newData){
     // .attr("y",textPosY)
     // .attr("style","font-size:15px; font-family: monospace;")
     // .text(getText)
+    // .on("mouseover",function(d,i){
+    //     d3.select(this).attr("style","display:none;");
+    // })
     
     
     
     // ;
-
-
-    
-    
-
-
 
 
 
