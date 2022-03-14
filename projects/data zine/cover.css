@@ -1,0 +1,13 @@
+.title{
+    font-weight: lighter;
+    font-size: 60px;
+    /* font-family:Roboto, sans-serif; */
+    font-family: monospace;
+    
+}
+
+.description{
+    font-weight: lighter;
+    font-size: 28px;
+    font-family:monospace;
+}

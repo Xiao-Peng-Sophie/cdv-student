@@ -8,7 +8,7 @@ let viz = d3.select("#container")
       .attr("class", "viz")
       .attr("width", w)
       .attr("height", h)
-      .style("background-color", "white")
+      .style("background-color", "#FFFDF6") //FFFDF6
 ;
 
 function getPosition(d,i){
@@ -17,7 +17,7 @@ function getPosition(d,i){
   var py=Math.floor(i/12);
   var x=100+px*200;
   var y=120+py*250;
-  return "translate("+x+","+y+")"
+  return "translate("+x+","+y+") scale(0.9)"
 }
 //"whatWereYouDoing": "Chatting with friends"
 function doingWhat(d,i){
@@ -56,7 +56,7 @@ function where(d,i){
     return "#CDBEF5" ;
   }
   else if (d.where =="Subway station"){
-    return "#CDBEF5" ;
+    return "#97D9D5" ;
   }
   else {
     return "#EDBEF5"; //park
@@ -65,40 +65,43 @@ function where(d,i){
 
 function forWhat(d,i){
   if(d.whatAreYouWaitingFor == "Food"){
-    return "#FFB47E" ;
+    return "#FFAE6F" ;
   }
   else if(d.whatAreYouWaitingFor == "Traffic Light"){
-    return "#FF8CC3" ;
+    return "#FF86C0" ;
   }
   else if(d.whatAreYouWaitingFor == "Friends"){
-    return "#FF8989" ;
+    return "#FF98A4" ;
   }
   else if(d.whatAreYouWaitingFor == "Subway"){
-    return "#FDCE74" ;
+    return "#FFC860" ;
   }
   else if(d.whatAreYouWaitingFor == "Workout Over"){
-    return "#CE9CFF" ;
+    return "#D3A8FF" ;
   }
   else if(d.whatAreYouWaitingFor == "Alarm clock"){
-    return "#F48866" ;
+    return "#FF906C" ;
   }
   else if(d.whatAreYouWaitingFor == "Shuttle Bus"){
-    return "#F096FF" ;
+    return "#F29FFF" ;
   }
   else if(d.whatAreYouWaitingFor == "Taxi"){
-    return "#A8A6FF" ;
+    return "#9BABFF" ;
   }
   else if(d.whatAreYouWaitingFor == "A friend's face in a video"){
-    return "#FFC0B8" ;
+    return "#FFB3A9" ;
   }
   else if(d.whatAreYouWaitingFor == "A video of my friend's playing guitar"){
-    return "#FEF391" ;
+    return "#FFEC89" ;
   }
   else if(d.whatAreYouWaitingFor == "Sunset"){
-    return "#EF63A6" ;
+    return "#85AEFF" ;
+  }
+  else if(d.whatAreYouWaitingFor == "Class begin"){
+    return "#94DFA4" ;
   }
   else {
-    return "#FFB9E3";
+    return "#79D4DA";
   }
 }
 
@@ -109,21 +112,19 @@ function gotData(incomingData){
       .attr("class","datagroup") ;
 
       var sym = d3.symbol().type(d3.symbolTriangle).size(3000);
-      // datagroups.append("circle")
-      //   .attr("cx",0)
-      //   .attr("cy",0)
-      //   .attr("r",60)
-      //   .attr("fill","red")
-      //   ;
+      
+
+  
+
 //basic hourglass
       datagroups.append("path")
         .attr("d",sym)
-        .attr("fill","rgb(194,231,252)")
+        .attr("fill","#CFEEFF")
         .attr("transform","translate(0,80)");
 
       datagroups.append("path")
         .attr("d",sym)
-        .attr("fill","rgb(194,231,252)")
+        .attr("fill","#CFEEFF")
         .attr("transform","translate(0,-16) rotate(180)");
       
       datagroups.append("rect")
@@ -131,7 +132,7 @@ function gotData(incomingData){
         .attr("y",-58)
         .attr("width",110)
         .attr("height",11)
-        .attr("fill","rgb(233,198,166)")
+        .attr("fill","#F8D0AC")
         ;
 
       datagroups.append("rect")
@@ -139,7 +140,7 @@ function gotData(incomingData){
         .attr("y",110)
         .attr("width",110)
         .attr("height",11)
-        .attr("fill","rgb(233,198,166)")
+        .attr("fill","#F8D0AC")
         ;
 
         
@@ -149,30 +150,8 @@ function gotData(incomingData){
         function myTriangle(d,i){
           return "M -42 0 42 0 0 -75 Z"
         }
-        // datagroups.append("circle")
-        // .attr("cx",0)
-        // .attr("cy",0)
-        // .attr("r",20)
-        // // .attr("height",60)
-        // .attr("fill","black")
-        // ;
 
-        let myScale= d3.scaleLinear().domain([2,60]).range([0.8,0.2]);
-        
-        datagroups.append("path")
-        .attr("d",topTriangle)
-        .attr("fill",where)
-        // .attr("transform","translate(0,4) rotate(180) scale(0.5)");
-        .attr("transform",function(d, i){
-          let a = d.howLongDidYouWait;
-          let time = parseInt(a);
-          
-          let result=myScale(time);
-
-          return "translate(0,0) rotate(180) scale( "+result+")"; //different from linear scale?
-        })
-        
-        ;
+       
 
         //triangle at bottom - where & how long
         datagroups.append("path")
@@ -198,13 +177,108 @@ function gotData(incomingData){
        .attr("fill",doingWhat)
        ;
 
-        // circle at top - wait for what & mood
+        
+
+        function anotherTriangle(d,i){
+          let y=-25*Math.sqrt(3);
+          // return "M 0 0 25 -50 -25 -50  Z"
+          return "M 0 0 25 "+y+ "-25 "+ y +  " Z";
+        }
+        let myScale= d3.scaleLinear().domain([2,60]).range([1.15,0.78]);
+  
+        datagroups.append("path")
+          .attr("d",anotherTriangle)
+          .attr("fill",where)
+          .attr("transform",function(d, i){
+           
+            let a = d.howLongDidYouWait;
+            let time = parseInt(a);
+            //let result=0.35+time/180
+            let result=myScale(time);
+  
+            return " translate(0,32) scale("+result+")"; //different from linear scale?
+          })
+          
+          ;
+          function getY (d,i){
+            let a = d.howLongDidYouWait;
+            let time = parseInt(a);
+            let index=myScale(time);
+            let moodIndex=0;
+            if(d.feelings=="Impatient"){
+              moodIndex=6;
+            }
+            let posY=32-25*Math.sqrt(3)*index+moodIndex;
+
+
+            return posY;
+          }
+         // circle at top - wait for what & mood
         datagroups.append("circle")
         .attr("cx",0)
-        .attr("cy",-10)
+        .attr("cy",getY)
         .attr("r",15)
         .attr("fill",forWhat)
+      
         ;
+
+        datagroups.filter(function(d, i){
+          if(d.feelings == "Happy and Excited"){
+             return false
+          }else{
+             return true
+          }
+      }).append("path")
+      .attr("d",anotherTriangle)
+      .attr("fill",where)
+      .attr("transform",function(d, i){
+       
+        let a = d.howLongDidYouWait;
+        let time = parseInt(a);
+        //let result=0.35+time/180
+        let result=myScale(time);
+
+        return " translate(0,32) scale("+result+")"; //different from linear scale?
+      })
+      
+      ;
+
+
+        // datagroups.append("path")
+        //   .attr("d",anotherTriangle)
+        //   .attr("fill",where)
+        //   .attr("transform",function(d, i){
+           
+        //     let a = d.howLongDidYouWait;
+        //     let time = parseInt(a);
+        //     //let result=0.35+time/180
+        //     let result=myScale(time);
+  
+        //     return " translate(0,32) scale("+result+")"; //different from linear scale?
+        //   })
+          
+        //   ;
+
+         //arc 
+        //   var path1= d3.path();
+        // path1.arc(0,0,15,-2.74,-0.4)
+        //  datagroups.append("path")
+        //  .attr("d",path1)
+        //  .attr("fill","blue")
+        //  .attr("transform","translate(0,-10) scale(1,1)")
+        //  ;
+
+
+         //semi circle
+
+        // path1.arc(0,0,15,3.14,0)
+        //  datagroups.append("path")
+        //  .attr("d",path1)
+        //  .attr("fill","blue")
+        //  .attr("transform","translate(0,-17) scale(1,1)")
+        //  ;
+
+          
 
 
 
