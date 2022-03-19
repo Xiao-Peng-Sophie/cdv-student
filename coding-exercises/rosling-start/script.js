@@ -201,7 +201,7 @@ function gotData(incomingData){
     }
     function getIncomingGroupLocation(d, i){
       let x = xScale(d.fert);
-      let y = -30;
+      let y = -100;
       return "translate("+x+", "+y+")"
     }
     function populationSize(d, i){
