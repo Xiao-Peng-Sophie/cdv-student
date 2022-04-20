@@ -72,7 +72,7 @@ d3.json("countries.geojson").then(function(geoData){
             //}
 
             if (campuses.includes(d.properties.name)){
-              return "rgba(79, 16, 135, 1)"
+              return "rgba(161, 106, 208, 1)"
 
             }
           
