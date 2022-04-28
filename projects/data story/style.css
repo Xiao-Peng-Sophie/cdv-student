@@ -1,0 +1,273 @@
+h1{
+    color: darkblue;
+}
+.title{
+    color:white;
+    font-size: 70px;
+    font-weight: 200;
+}
+.subTitle{
+    color:white;
+    font-size: 26px;
+    font-weight:lighter;
+
+}
+.coverContainer{
+    position: relative;
+    text-align: center;
+    /* color: white; */
+
+}
+
+.titleCentered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    }
+
+    .fixed-bg {
+        background-image: url("cover.jpeg");
+        width:100%;
+        min-height: 800px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    p{
+        color: red;
+        font-size: 30px;
+    }
+    .text1{
+        
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        font-size: 70px;
+        position: absolute;
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 300px;
+    }
+
+    .text2{
+        position: absolute;
+        margin-left: 120px;
+        margin-right: 120px;
+        top: 1100px;
+        background-color: white;
+    }
+
+    .text3{
+        position: absolute;
+        margin-left: 120px;
+        margin-right: 120px;
+        top: 1900px;
+        background-color: white;
+
+    }
+
+
+    .bigContainer{
+       
+        position: relative;
+        text-align: center;
+        height: 1800px;
+        background-color: white;
+    }
+    .sentence1{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+        position: relative;
+    }
+
+
+    .bigContainer2{
+       
+        position: relative;
+        text-align: center;
+        height: 850px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    
+
+
+
+
+
+
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #0000008a;
+      }
+      
+      
+      .text {
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+    .container1{
+        position: absolute;
+          top: 0px; 
+          left:120px;
+          width: 460px;
+        
+    }
+    .container1:hover .overlay {
+            opacity: 1;
+    }
+
+    .container2{
+        position: absolute;
+          top: 50px;
+          left:800px;
+          width: 400px;
+        
+    }
+    .container2:hover .overlay {
+            opacity: 1;
+    }
+
+    .container0{
+        position: absolute;
+          top: 210px;
+          left:400px;
+          width: 480px;
+        
+    }
+    .container0:hover .overlay {
+            opacity: 1;
+    }
+
+    .container3{
+        position: absolute;
+          top: 430px;
+          left:150px;
+          width: 380px;
+        
+    }
+    .container3:hover .overlay {
+            opacity: 1;
+    }
+
+    .container4{
+        position: absolute;
+          top: 480px;
+          left:710px;
+          width: 490px;
+        
+    }
+    .container4:hover .overlay {
+            opacity: 1;
+    }
+
+    .container5{
+        position: absolute;
+          top: 770px;
+          left:400px;
+          width: 470px;
+        
+    }
+    .container5:hover .overlay {
+            opacity: 1;
+    }
+
+    .container6{
+        position: absolute;
+          top: 970px;
+          left:800px;
+          width: 400px;
+        
+    }
+    .container6:hover .overlay {
+            opacity: 1;
+    }
+
+    .container7{
+        position: absolute;
+          top: 920px;
+          left:60px;
+          width: 440px;
+        
+    }
+    .container7:hover .overlay {
+            opacity: 1;
+    }
+
+    .container8{
+        position: absolute;
+          top: 1190px;
+          left:400px;
+          width: 400px;
+        
+    }
+    .container8:hover .overlay {
+            opacity: 1;
+    }
+
+    .container9{
+        position: absolute;
+          top: 1430px;
+          left:730px;
+          width: 470px;
+        
+    }
+    .container9:hover .overlay {
+            opacity: 1;
+    }
+
+    .container10{
+        position: absolute;
+          top: 1400px;
+          left:80px;
+          width: 470px;
+        
+    }
+    .container10:hover .overlay {
+            opacity: 1;
+    }
+
+    .overColor{
+        position: absolute;
+        top:-50px;
+        height:900px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+    }
+
+  
+
+
+
+
+
+
