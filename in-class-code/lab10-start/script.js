@@ -77,11 +77,9 @@ d3.json("monarchs.json").then(function(incomingData){
             }
           }).select("circle")
             .transition()
-            .delay(function(d,i){
-              return i*8;
-            })
+            .delay(10)
             .attr("opacity",0.1)
-            .attr("r",5)
+            // .attr("r",5)
           ;
         
       })

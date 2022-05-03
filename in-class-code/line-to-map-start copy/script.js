@@ -108,8 +108,8 @@ d3.json("mainland.geojson").then(function(geoData){
           }
 
         })
-        .attr("stroke", "red")
-        // .attr("stroke-width", 8)
+        .attr("stroke", "lavender")
+        .attr("stroke-width", )
 
     ;
 
