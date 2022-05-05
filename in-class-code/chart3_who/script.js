@@ -44,7 +44,7 @@ d3.json("PAC.json").then(function(incomingData){
     .attr("cy", function(d){
       return h/2;
     })
-    .attr("r", 4)
+    .attr("r", 5)
   ;
 
  
@@ -87,7 +87,7 @@ d3.json("PAC.json").then(function(incomingData){
 
 
     }))
-    .force("collide",d3.forceCollide(5))
+    .force("collide",d3.forceCollide(6.5))
     .on("tick",simulationRan)
 
   ;

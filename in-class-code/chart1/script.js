@@ -14,7 +14,7 @@ let viz = d3.select("#visualization")
 
 
 // initialise scales
-let xScale = d3.scaleLinear().range([padding, w-3*padding]);
+let xScale = d3.scaleLinear().range([padding, w-padding]);
 
 
 
@@ -34,7 +34,7 @@ d3.json("PAC.json").then(function(incomingData){
   let extent = d3.extent(incomingData, function(d){
     return d.year;
   })
-  console.log(extent);
+  //console.log(extent);
   // amend domain to scale
   xScale.domain([1947,2022]);
   // group to hold axis

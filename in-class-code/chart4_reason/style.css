@@ -1,3 +1,26 @@
 body{
   margin:0;
 }
+
+.datagroup text {
+  visibility: hidden;
+  
+}
+
+.datagroup:hover text {
+  visibility: visible;
+  
+}
+
+.datagroup rect {
+  visibility: hidden;
+  
+  
+}
+
+.datagroup:hover rect {
+  visibility: visible;
+  
+}
+
+

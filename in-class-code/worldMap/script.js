@@ -15,31 +15,8 @@ d3.json("countries.geojson").then(function(geoData){
   d3.json("location.json").then(function (location){
 
  
-  d3.csv("china-pop-2018.csv").then(function(incomingData){
-    console.log(incomingData);
-
-
-    // let pixelvalue = projection([lon,lat])
-    
-    // viz.append("circle")
-    //     .attr("cx",function(){
-    //       return projection([lon,lat])[0];
-    //     })
-    //     .attr("cy",function(){
-    //       return projection([lon,lat])[1];
-    //     })
-    //     .attr("r",5)
-    //     .attr("fill","red")
-
-    //     ;
-
-
-    
-
-   
-
-  
-
+  //d3.csv("china-pop-2018.csv").then(function(incomingData){
+    //console.log(incomingData);
     // PRINT DATA
     //console.log(incomingData);
 
@@ -123,9 +100,6 @@ d3.json("countries.geojson").then(function(geoData){
 
         // })
        
-//35.86166	104.195397
-// let lat = 29.5657 ;
-//     let lon = 106.5512;
 
     let lat = 35.86166 ;
     let lon = 104.195397;
@@ -172,7 +146,7 @@ d3.json("countries.geojson").then(function(geoData){
 
         
 
-      })
+      //})
 
   })
 
