@@ -153,7 +153,7 @@
         "roleperson": "1 =King/Queen/Emperor",
         "countryreceive": "Republic of Korea",
         "reason": "Colonial rule",
-        "setting": "50 =Other"
+        "setting": "10 =(Diplomatic) reception"
     },
     {
         "date": "07.09.1984",
@@ -294,7 +294,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "Republic of Korea",
         "reason": "Colonial rule",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "04.11.1990",
@@ -307,7 +307,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "Canada",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "1 =Public speech"
     },
     {
         "date": "04.03.1991",
@@ -333,7 +333,7 @@
         "roleperson": "2 =President",
         "countryreceive": "United States of America",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "3 =Public letter/ Statement"
     },
     {
         "date": "17.01.1992",
@@ -450,7 +450,7 @@
         "roleperson": "2 =President",
         "countryreceive": "United States of America",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "3 =Public letter/ Statement"
     },
     {
         "date": "13.10.1993",
@@ -1419,7 +1419,7 @@
         "roleperson": "6 =Diplomat",
         "countryreceive": "*Transnational*",
         "reason": "Other",
-        "setting": "50 =Other"
+        "setting": "3 =Public letter/ Statement"
     },
     {
         "date": "10.09.2003",
@@ -1536,7 +1536,7 @@
         "roleperson": "2 =President",
         "countryreceive": "Jordan",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "07.05.2004",
@@ -2219,7 +2219,7 @@
         "roleperson": "6 =Diplomat",
         "countryreceive": "Indonesia",
         "reason": "Colonial rule",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "11.12.2011",
@@ -2788,7 +2788,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "*Transnational*",
         "reason": "Treatment of minority group",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "04.06.2018",
@@ -3047,7 +3047,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "*Transnational*",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "3 =Public letter/ Statement"
     },
     {
         "date": "11.02.1998",
@@ -3575,7 +3575,7 @@
         "roleperson": "4 =Minister",
         "countryreceive": "*Transnational*",
         "reason": "Slavery",
-        "setting": "50 =Other"
+        "setting": "1 =Public speech"
     },
     {
         "date": "25.09.2016",
@@ -3755,7 +3755,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "Denmark",
         "reason": "Other",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "01.08.2019",
@@ -3872,7 +3872,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "United Kingdom of Great Britain and Northern Ireland",
         "reason": "Colonial rule",
-        "setting": "50 =Other"
+        "setting": "7 =(Diplomatic) visit"
     },
     {
         "date": "01.09.2019",
@@ -3936,7 +3936,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "*Transnational*",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "16.03.2005",
@@ -3988,7 +3988,7 @@
         "roleperson": "6 =Diplomat",
         "countryreceive": "*Transnational*",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "02.08.2016",
@@ -4039,7 +4039,7 @@
         "roleperson": "3 =Prime Minister",
         "countryreceive": "*Transnational*",
         "reason": "Treatment of LGBTQ",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "01.01.1999",
@@ -4078,7 +4078,7 @@
         "roleperson": "4 =Minister",
         "countryreceive": "*Transnational*",
         "reason": "Slavery",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "30.03.2001",
@@ -4360,7 +4360,7 @@
         "roleperson": "2 =President",
         "countryreceive": "Colombia",
         "reason": "Protracted conflict",
-        "setting": "50 =Other"
+        "setting": "5 =Commemoration"
     },
     {
         "date": "23.01.2016",
@@ -4437,7 +4437,7 @@
         "roleperson": "2 =President",
         "countryreceive": "Guatemala",
         "reason": "Civil war",
-        "setting": "50 =Other"
+        "setting": "5 =Commemoration"
     },
     {
         "date": "22.10.2019",
@@ -4618,7 +4618,7 @@
         "roleperson": "5 =(Member of) parliament",
         "countryreceive": "*Transnational*",
         "reason": "Treatment of minority group",
-        "setting": "50 =Other"
+        "setting": "12 =Twitter"
     },
     {
         "date": "30.06.2020",
@@ -4631,7 +4631,7 @@
         "roleperson": "1 =King/Queen/Emperor",
         "countryreceive": "Congo",
         "reason": "Colonial rule",
-        "setting": "50 =Other"
+        "setting": "3 =Public letter/ Statement"
     },
     {
         "date": "30.10.2020",
@@ -4707,7 +4707,7 @@
         "roleperson": "4 =Minister",
         "countryreceive": "Netherlands",
         "reason": "Treatment of LGBTQ",
-        "setting": "50 =Other"
+        "setting": "11 =Conference/ Meeting"
     },
     {
         "date": "24.07.1998",
@@ -4746,7 +4746,7 @@
         "roleperson": "2 =President",
         "countryreceive": "Afghanistan",
         "reason": "War",
-        "setting": "50 =Other"
+        "setting": "12 =Twitter"
     },
     {
         "date": "26.11.1998",

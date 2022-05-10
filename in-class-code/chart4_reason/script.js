@@ -50,6 +50,17 @@ xAxisGroup.call(xAxis);
  
 
   let graphGroup = viz.append("g").attr("class", "graphgroup");
+  
+  // let texts = graphGroup.selectAll(".description").data(incomingData).enter()
+  // .append("text")
+  //   .attr("class", "description")
+  //   .attr("transform", function(d){
+  //     //console.log(d);
+  //     return "translate("+ xScale(d.year) +","+ h/2 +")"
+  //   })
+  //   .text("hellooo")
+
+  //   ;
 
 
   let datagroups = graphGroup.selectAll(".datagroup").data(incomingData).enter()
@@ -60,11 +71,15 @@ xAxisGroup.call(xAxis);
         return "translate("+ xScale(d.year) +","+ h/2 +")"
       })
       .on("mouseover",function(event,d){
+
+       
+
+
+
         d3.select(this).select("circle")
           .transition()
           .duration(1000)
-          .attr("opacity",1)
-          
+          .attr("opacity",1) 
           ;
 
           datagroups.filter(function(datapoint){
@@ -81,6 +96,8 @@ xAxisGroup.call(xAxis);
             .attr("opacity",0.2)
            
           ;
+
+        
         
       })
       .on("mouseout",function(event,d){
