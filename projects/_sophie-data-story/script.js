@@ -49,7 +49,7 @@ let paddingLeft = (wW-gW)/2;
 
 let viz = d3.select("#vizContainer").append("svg")
     .style("width", wW)
-    .style("height", wH*6) //wH*5
+    .style("height", wH*5) //wH*5
     .style("background-color", "lavender")
 ;
 
