@@ -220,6 +220,7 @@ d3.json("countries.geojson").then(function(geoData){
 
         let mapGroup = bothGraphs.append("g").attr("class", "mapgroup");
         let datagroups = mapGroup.selectAll(".country").data(geoData.features).enter()
+        .filter(d=> d.properties.name !="Bermuda")
         .append("g")
         .attr("class", "country")
         
@@ -228,17 +229,47 @@ d3.json("countries.geojson").then(function(geoData){
 
         datagroups.append("path")
             .attr("d", pathMaker)
-            .attr("fill",function(d, i){
-            return "white"
-        })
-        .attr("stroke", "blue")
-        .attr("stroke-width", 1)
+            .attr("fill","rgba(244, 215, 214, 0.75)")
+            //.attr("fill","rgba(240, 236, 236, 1)")
+        .attr("stroke", "rgba(255, 254, 250, 1)")
+        .attr("stroke-width", 1.2)
         .on("mouseover",function(event,d){
           // console.log("over:",d);
           
         })
 
         ;
+
+
+        //role of person
+
+        bothGraphs.append("text").text("King/Queen/Emperor").attr("x", paddingLeft*1.5+150).attr("y", wH*3 + paddingTop + 210).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("President").attr("x", paddingLeft*1.5+400).attr("y", wH*3 + paddingTop + 210).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Prime minister").attr("x", paddingLeft*1.5+650).attr("y", wH*3 + paddingTop + 210).attr("fill","black").attr("text-anchor","middle");
+
+        bothGraphs.append("text").text("Member of parliament").attr("x", paddingLeft*1.5+150).attr("y", wH*3 + paddingTop + 410).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Diplomat").attr("x", paddingLeft*1.5+400).attr("y", wH*3 + paddingTop + 410).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Other official role").attr("x", paddingLeft*1.5+650).attr("y", wH*3 + paddingTop + 410).attr("fill","black").attr("text-anchor","middle");
+
+        // apology setting
+        //paddingLeft*1.5+160 -  wH*4 + paddingTop + 20 -paddingLeft*1.5+320 - wH*4 + paddingTop + 200
+        bothGraphs.append("text").text("Public speech").attr("x", paddingLeft*1.5+160).attr("y", wH*4 + paddingTop + 100).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Parliament").attr("x", paddingLeft*1.5+320).attr("y", wH*4 + paddingTop + 100).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Public letter/Statement").attr("x", paddingLeft*1.5+480).attr("y", wH*4 + paddingTop + 100).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Resolution/Law").attr("x", paddingLeft*1.5+640).attr("y", wH*4 + paddingTop + 100).attr("fill","black").attr("text-anchor","middle");
+
+        bothGraphs.append("text").text("Commemoration").attr("x", paddingLeft*1.5+160).attr("y", wH*4 + paddingTop + 280).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("/Ceremony").attr("x", paddingLeft*1.5+160).attr("y", wH*4 + paddingTop + 302).attr("fill","black").attr("text-anchor","middle");
+
+        bothGraphs.append("text").text("Diplomatic event").attr("x", paddingLeft*1.5+320).attr("y", wH*4 + paddingTop + 280).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("/Within country visit").attr("x", paddingLeft*1.5+320).attr("y", wH*4 + paddingTop + 302).attr("fill","black").attr("text-anchor","middle");
+
+        bothGraphs.append("text").text("Interview").attr("x", paddingLeft*1.5+480).attr("y", wH*4 + paddingTop + 280).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Conference/Meeting").attr("x", paddingLeft*1.5+640).attr("y", wH*4 + paddingTop + 280).attr("fill","black").attr("text-anchor","middle");
+
+        bothGraphs.append("text").text("Twitter").attr("x", paddingLeft*1.5+160).attr("y", wH*4 + paddingTop + 460).attr("fill","black").attr("text-anchor","middle");
+        bothGraphs.append("text").text("Other").attr("x", paddingLeft*1.5+320).attr("y", wH*4 + paddingTop + 460).attr("fill","black").attr("text-anchor","middle");
+        
 
 
         //FORCE SIMULATIONS 
@@ -392,7 +423,7 @@ d3.json("countries.geojson").then(function(geoData){
             
       ;
 
-      }
+      }  
 
       //get polistion  for graph 5
 
@@ -571,20 +602,7 @@ d3.json("countries.geojson").then(function(geoData){
       function showGraph2(){
 
             let updatingData = bothGraphs.selectAll(".datapoint").data(pacData); //temporary 
-          //   let enteringData = updatingData.enter();
-
-          //   enteringData
-          //     .append("circle")
-          //     .attr("class", "datapoint")
-          //     .attr("cx", function(d){
-          //       //console.log("now the g1x data is: ",d.g1x); //g1x returns undefined
-          //       return d.g2x; //d.g1x
-          //     })
-          //     .attr("cy", function(d){
-          //       return d.g2y;
-          //     })
-          //     .attr("r", 1)
-          // ;
+         
 
             updatingData
               .transition()
