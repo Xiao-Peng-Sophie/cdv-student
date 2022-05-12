@@ -1,6 +1,4 @@
-# I express my deep remorse
-
-# –– CDV Data Story
+# I express my deep remorse –– CDV Data Story
 
 ## Introduction
 
