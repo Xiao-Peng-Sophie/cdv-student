@@ -22,6 +22,7 @@ body{
 .tooltip text{
   /* fill:white; */
   /* font-family: sans-serif; */
+  font-family: 'Source Serif Pro', serif;
 }
 
 
@@ -43,6 +44,8 @@ body{
   color: rgb(27, 27, 27);
   /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+
   padding: 20px;
   margin-left: 40px;
   width: 300px;
@@ -58,9 +61,7 @@ body{
 
 
 
-h1{
-    color: darkblue;
-}
+
 .title{
     color:white;
     font-size: 70px;
@@ -100,10 +101,14 @@ h1{
     p{
         color: rgb(255, 255, 255);
         font-size: 30px;
+        font-family: 'Source Serif Pro', serif;
+
     }
     .text1{
-      max-width: 520px;
+      max-width: 600px;
       color:rgb(169, 75, 75);
+      font-family: 'Source Serif Pro', serif;
+
         
     top: 50%;
     left: 50%;
@@ -116,6 +121,8 @@ h1{
     }
 
     .text2{
+        font-family: 'Source Serif Pro', serif;
+
         position: absolute;
         padding: 50px;
         margin-left: 120px;
@@ -125,6 +132,8 @@ h1{
     }
 
     .text3{
+        font-family: 'Source Serif Pro', serif;
+
         position: absolute;
         padding: 50px;
 
@@ -139,6 +148,8 @@ h1{
     .highlightText{
       color: rgb(169, 75, 75);
       font-weight: bold;
+      font-family: 'Source Serif Pro', serif;
+
     }
 
 
@@ -343,17 +354,11 @@ h1{
   }
 
     
-
-
-
-
-
-
-
    
       
       
       .text {
+        font-family: 'Source Serif Pro', serif;
         color: white;
         font-size: 18px;
         position: absolute;
@@ -379,13 +384,13 @@ h1{
    
 
     .endText{
-      max-width: 800px;
+      max-width: 1000px;
       color:rgb(169, 75, 75);
         
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-        font-size: 70px;
+        font-size: 64px;
         position: absolute;
         margin-left: 0px;
         margin-right: 0px;

@@ -55,9 +55,6 @@ let viz = d3.select("#vizContainer").append("svg")
 
 
 
-
-
-
 let bothGraphs = viz.append("g").attr('class', "bothGraphs");
 let graphTranslateScale = d3.scaleLinear().domain([0, 1]).range([0, -wH])
 let graphTranslateScale2 = d3.scaleLinear().domain([0, 1]).range([-wH, -2*wH])
@@ -65,35 +62,6 @@ let graphTranslateScale3 = d3.scaleLinear().domain([0, 1]).range([-2*wH, -3*wH])
 let graphTranslateScale4 = d3.scaleLinear().domain([0, 1]).range([-3*wH, -4*wH])
 
 
-
-
-// bothGraphs.append("rect")
-//  .attr("x",0)
-//  .attr("y",0)
-//  .attr("width",wW)
-//  .attr("height",wH)
-//  .attr("fill","lightyellow");
-
-//  bothGraphs.append("rect")
-//  .attr("x",0)
-//  .attr("y",wH)
-//  .attr("width",wW)
-//  .attr("height",wH)
-//  .attr("fill","lightblue");
-
-//  bothGraphs.append("rect")
-//  .attr("x",0)
-//  .attr("y",wH*2)
-//  .attr("width",wW)
-//  .attr("height",wH)
-//  .attr("fill","lightgreen");
-
-//  bothGraphs.append("rect")
-//  .attr("x",0)
-//  .attr("y",wH*3)
-//  .attr("width",wW)
-//  .attr("height",wH)
-//  .attr("fill","pink");
 
 
 let tooltip = bothGraphs.append("g").attr("class", "tooltip").attr("transform", "translate(-300,-200)").attr("opacity", 0);
@@ -163,12 +131,21 @@ d3.json("countries.geojson").then(function(geoData){
         })
         //console.log("after categorizing:",pacData);
 
+        let formatYear = d3.timeParse("%Y");
+
+        pacData.forEach(d =>{
+          d.year = formatYear(d.year)
+          
+
+        })
+
+
         
         //SET AXIS AND MAP
 
         //Axis for Graph 1 (general timeline)
 
-        let g1xScale = d3.scaleLinear().range([paddingLeft*1.5, gW+paddingLeft*1.5]);
+        let g1xScale = d3.scaleTime().range([paddingLeft*1.5, gW+paddingLeft*1.5]);
         let extent = d3.extent(pacData, function(d){
             return d.year;
           })
@@ -179,7 +156,8 @@ d3.json("countries.geojson").then(function(geoData){
             .attr("transform", "translate(0,"+(paddingTop+gH)+")")
         ;
 
-        let g1xAxis = d3.axisBottom(g1xScale);
+        //let g1xAxis = d3.axisBottom(g1xScale);
+        let g1xAxis = d3.axisBottom(g1xScale).tickFormat(d3.timeFormat("%Y"));
           // build the axis into our group
         g1xAxisGroup.call(g1xAxis);
 
@@ -187,8 +165,8 @@ d3.json("countries.geojson").then(function(geoData){
         //Reason graph axis
 
         let reasons = pacData.map(d=>d.reason).filter(onlyUnique); 
-        let g2xScale = d3.scaleLinear().range([paddingLeft*1.5, gW+paddingLeft*1.5]);
-          g2xScale.domain([1945,2022]);
+        let g2xScale = d3.scaleTime().range([paddingLeft*1.5, gW+paddingLeft*1.5]);
+          g2xScale.domain(extent);
   
           let g2xAxisGroup = bothGraphs.append("g")
             .attr("class", "x2axisgroup")
