@@ -334,7 +334,7 @@ d3.json("countries.geojson").then(function(geoData){
            pacData.forEach(d=>{
            
            d.g3x = d.x;
-           d.g3y = d.y; //how can I change the y position of the map??
+           d.g3y = d.y+g2yScale.bandwidth()/2; //how can I change the y position of the map??
     
            })
 
